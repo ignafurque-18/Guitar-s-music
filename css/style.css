@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Radio Canada Big";
+}
+
+body {
+  background-color: #fff;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  color: black;
+  transition: 0.5s;
+}
+a:hover {
+  font-weight: bold;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.row {
+  margin: 10px;
+  padding: 0;
+}
+.row article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.row article .tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  background-color: gray;
+  color: #191919;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.row article .tarjeta div {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.row article .tarjeta div a {
+  width: 100%;
+  padding: 10px;
+  background-color: #191919;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+}
+.row article .tarjeta div h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.row article .tarjeta div p {
+  text-align: center;
+}
+.row article .tarjeta img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-top: 10px;
+  background-color: gray;
+}
+.row article .tarjeta:hover {
+  transform: scale(1.02);
+}
+
+.footer {
+  background-color: #F2E8C6;
+  height: 80px;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+.footer .footer__item {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: gray;
+}
+.navbar .container-fluid {
+  display: flex;
+  justify-content: center;
+}
+.navbar .navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.navbar .nav-item {
+  margin: 0 10px;
+}
+.navbar .nav-link {
+  color: black;
+  transition: 0.5s;
+}
+
+.section__presentacion {
+  background-color: #DAD4B5;
+  height: 500px;
+  display: grid;
+}
+.section__presentacion .div__presentacion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+.section__presentacion .div__presentacion h2 {
+  text-align: left;
+  width: 200px;
+  margin-top: 100px;
+  color: #191919;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  transition: 0.5s;
+}
+.section__presentacion .div__presentacion h2:hover {
+  color: #5c5a5a;
+}
+.section__presentacion .div__presentacion img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section__title {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+.section__title .div__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+
+.section__about {
+  margin: 15px;
+  margin-bottom: 50px;
+}
+.section__about .div__about {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  margin: 20px;
+  border-radius: 8px;
+}
+.section__about .div__about .p__about {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.section__estudio {
+  margin: 15px;
+  margin-bottom: 50px;
+}
+.section__estudio .div__estudio {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  margin: 20px;
+  border-radius: 8px;
+}
+.section__estudio .div__estudio .text__estudio {
+  text-align: center;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.section__estudio .div__estudio .title__estudio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7px;
+  margin-top: 10px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.div__mapa {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+.div__mapa .title__mapa {
+  text-align: left;
+  width: 200px;
+  margin: 20px;
+  color: #191919;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+.div__mapa .title__mapa:hover {
+  color: #191919;
+}
+.div__mapa .title__mapa .mapa {
+  width: 100%;
+  height: 300px;
+  max-width: 600px;
+  border: 0;
+}
+
+.page__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  transition: 0.5s;
+}
+.page__title:hover {
+  color: gray;
+}
+
+@media (min-width: 769px) {
+  .section__presentacion .title__presentacion {
+    font-size: 28px;
+  }
+  .section__title .h1__title {
+    font-size: 36px;
+  }
+  .section__estudio .title__estudio {
+    font-size: 28px;
+  }
+  .section__estudio .text__estudio {
+    font-size: 18px;
+  }
+  .div__mapa .title__mapa {
+    font-size: 48px;
+  }
+  .div__mapa .mapa {
+    height: 450px;
+  }
+}
+@media (max-width: 768px) {
+  .section__presentacion .title__presentacion {
+    font-size: 22px;
+  }
+  .section__title .h1__title {
+    font-size: 30px;
+  }
+  .section__estudio .title__estudio {
+    font-size: 24px;
+  }
+  .section__estudio .text__estudio {
+    font-size: 16px;
+  }
+  .div__mapa .title__mapa {
+    font-size: 24px;
+  }
+  .div__mapa .mapa {
+    height: 350px;
+  }
+  .div__mapa .mapa {
+    height: 350px;
+  }
+}
+@media (max-width: 480px) {
+  .section__presentacion {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .section__presentacion .div__presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .section__presentacion .div__presentacion .title__presentacion {
+    font-size: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .section__presentacion .div__presentacion .item__presentacion {
+    display: none;
+  }
+  .section__title .h1__title {
+    font-size: 28px;
+  }
+  .section__estudio .title__estudio {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .section__estudio .text__estudio {
+    font-size: 14px;
+  }
+  .div__mapa .title__mapa {
+    font-size: 20px;
+  }
+  .div__mapa .mapa {
+    height: 250px;
+  }
+  .footer__item {
+    font-size: 12px;
+  }
+}
+
